@@ -1,0 +1,15 @@
+---- GYRO_Init 匹配 (2 在 2 文件 ) ----
+Main.c (user\src):	GYRO_Init();
+Test.c (user\src):void GYRO_Init()
+---- EXTI9_5_IRQn 匹配 (8 在 1 文件 ) ----
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                        */
+---- BOOT 匹配 (2 在 2 文件 ) ----
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):#define BOOT                                    BIT(7)
+Stm32f10x_flash.h (libraries\stm32f10x_stdperiph_driver\inc):#define IS_FLASH_BOOT(BOOT) (((BOOT) == FLASH_BOOT_Bank1) || ((BOOT) == FLASH_BOOT_Bank2))
