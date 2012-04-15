@@ -129,7 +129,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGTARM</Key>
-          <Name>(1010=968,147,1334,693,1)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=414,76,1050,738,0)(110=180,206,390,655,0)(111=529,173,739,622,1)(1011=805,182,1329,532,0)(180=-1,-1,-1,-1,0)(120=641,206,1052,600,0)(121=756,100,1167,494,1)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=914,125,1303,459,1)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=858,155,1296,558,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(211=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(221=890,72,1357,583,0)(230=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
+          <Name>(1010=968,147,1334,693,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=436,67,1072,729,0)(110=180,206,390,655,0)(111=983,149,1193,598,0)(1011=805,182,1329,532,0)(180=-1,-1,-1,-1,0)(120=641,206,1052,600,0)(121=803,110,1214,504,0)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(140=526,198,1204,527,0)(240=933,128,1322,462,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=858,155,1296,558,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(211=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(221=890,72,1357,583,0)(230=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -151,9 +151,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>201</LineNumber>
+          <LineNumber>104</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134226930</Address>
+          <Address>134228810</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
@@ -161,7 +161,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\IMU1\../../USER/src/stm32f10x_it.c\201</Expression>
+          <Expression>\\IMU1\../../USER/src/functions.c\104</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -180,7 +180,7 @@
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>I2C_run_flag</ItemText>
+          <ItemText>matrix_test_C</ItemText>
         </Mm>
       </MemoryWindow1>
       <DebugFlag>
@@ -227,7 +227,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>124</TopLine>
+      <TopLine>127</TopLine>
       <CurrentLine>133</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s</PathWithFileName>
@@ -262,8 +262,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>261</TopLine>
-      <CurrentLine>269</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\USER\src\system_stm32f10x.c</PathWithFileName>
       <FilenameWithoutPath>system_stm32f10x.c</FilenameWithoutPath>
@@ -283,8 +283,8 @@
       <Focus>0</Focus>
       <ColumnNumber>8</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>143</TopLine>
-      <CurrentLine>154</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c</PathWithFileName>
       <FilenameWithoutPath>misc.c</FilenameWithoutPath>
@@ -339,8 +339,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>521</TopLine>
-      <CurrentLine>529</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_dma.c</FilenameWithoutPath>
@@ -353,8 +353,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>235</TopLine>
-      <CurrentLine>241</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_exti.c</FilenameWithoutPath>
@@ -379,10 +379,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>82</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>374</TopLine>
-      <CurrentLine>381</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_gpio.c</FilenameWithoutPath>
@@ -395,8 +395,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1051</TopLine>
-      <CurrentLine>1057</CurrentLine>
+      <TopLine>1042</TopLine>
+      <CurrentLine>1043</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_i2c.c</FilenameWithoutPath>
@@ -423,8 +423,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1097</TopLine>
-      <CurrentLine>1108</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_rcc.c</FilenameWithoutPath>
@@ -465,8 +465,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>880</TopLine>
-      <CurrentLine>886</CurrentLine>
+      <TopLine>869</TopLine>
+      <CurrentLine>875</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_usart.c</FilenameWithoutPath>
@@ -486,8 +486,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>26</TopLine>
-      <CurrentLine>32</CurrentLine>
+      <TopLine>59</TopLine>
+      <CurrentLine>63</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\USER\src\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -498,10 +498,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>192</TopLine>
-      <CurrentLine>201</CurrentLine>
+      <TopLine>66</TopLine>
+      <CurrentLine>66</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\USER\src\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -514,18 +514,72 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>395</TopLine>
-      <CurrentLine>406</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\USER\src\PPP_init.c</PathWithFileName>
       <FilenameWithoutPath>PPP_init.c</FilenameWithoutPath>
     </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>21</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>23</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>105</TopLine>
+      <CurrentLine>119</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\USER\src\functions.c</PathWithFileName>
+      <FilenameWithoutPath>functions.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>22</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>61</TopLine>
+      <CurrentLine>65</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\USER\src\test.c</PathWithFileName>
+      <FilenameWithoutPath>test.c</FilenameWithoutPath>
+    </File>
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\stm32f10x_conf.h</PathWithFilename>
+    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\functions.h</PathWithFilename>
+    <TopLine>4</TopLine>
+    <CurrentLine>15</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>E:\code\stm32f1\IMU1\USER\src\test.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>3</CurrentLine>
+    <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -549,9 +603,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h</PathWithFilename>
-    <TopLine>55</TopLine>
-    <CurrentLine>63</CurrentLine>
+    <PathWithFilename>E:\code\stm32f1\IMU1\USER\src\test1.c</PathWithFilename>
+    <TopLine>86</TopLine>
+    <CurrentLine>91</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -575,7 +629,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\conf.h</PathWithFilename>
+    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\PPP_init.h</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -601,113 +655,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\USER\src\lsm303dlhc_driver.c</PathWithFilename>
-    <TopLine>34</TopLine>
-    <CurrentLine>45</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h</PathWithFilename>
-    <TopLine>171</TopLine>
-    <CurrentLine>176</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\USER\src\test.c</PathWithFilename>
-    <TopLine>93</TopLine>
-    <CurrentLine>104</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\I2CIT.c</PathWithFilename>
+    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\conf.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>10</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\code\stm32f1\IMU1\USER\inc\PPP_init.h</PathWithFilename>
-    <TopLine>6</TopLine>
-    <CurrentLine>6</CurrentLine>
+    <CurrentLine>9</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -735,127 +685,79 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>7</ActiveTab>
+      <ActiveTab>5</ActiveTab>
       <Documents>
+        <Doc>
+          <Name>..\..\USER\src\test.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>61</TopLine>
+          <CurrentLine>65</CurrentLine>
+        </Doc>
         <Doc>
           <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>1051</TopLine>
-          <CurrentLine>1057</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\USER\src\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>26</TopLine>
-          <CurrentLine>32</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\USER\src\PPP_init.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>395</TopLine>
-          <CurrentLine>406</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\USER\inc\PPP_init.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>6</TopLine>
-          <CurrentLine>6</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\USER\src\stm32f10x_it.c</Name>
-          <ColumnNumber>1</ColumnNumber>
-          <TopLine>192</TopLine>
-          <CurrentLine>201</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>880</TopLine>
-          <CurrentLine>886</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>374</TopLine>
-          <CurrentLine>381</CurrentLine>
+          <TopLine>1042</TopLine>
+          <CurrentLine>1043</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>124</TopLine>
+          <TopLine>127</TopLine>
           <CurrentLine>133</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</Name>
+          <Name>..\..\USER\src\stm32f10x_it.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>235</TopLine>
-          <CurrentLine>241</CurrentLine>
+          <TopLine>66</TopLine>
+          <CurrentLine>66</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</Name>
+          <Name>..\..\USER\src\main.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>1097</TopLine>
-          <CurrentLine>1108</CurrentLine>
+          <TopLine>59</TopLine>
+          <CurrentLine>63</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\USER\src\system_stm32f10x.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>261</TopLine>
-          <CurrentLine>269</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>E:\code\stm32f1\I2CIT.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>10</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\USER\src\test.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>93</TopLine>
-          <CurrentLine>104</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>521</TopLine>
-          <CurrentLine>529</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>143</TopLine>
-          <CurrentLine>154</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h</Name>
-          <ColumnNumber>25</ColumnNumber>
-          <TopLine>171</TopLine>
-          <CurrentLine>176</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>E:\code\stm32f1\IMU1\USER\src\lsm303dlhc_driver.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>34</TopLine>
-          <CurrentLine>45</CurrentLine>
+          <Name>..\..\USER\src\functions.c</Name>
+          <ColumnNumber>23</ColumnNumber>
+          <TopLine>105</TopLine>
+          <CurrentLine>119</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\USER\inc\conf.h</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
+          <CurrentLine>9</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\USER\inc\PPP_init.h</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h</Name>
-          <ColumnNumber>4</ColumnNumber>
-          <TopLine>55</TopLine>
-          <CurrentLine>63</CurrentLine>
+          <Name>..\..\USER\src\test1.c</Name>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>86</TopLine>
+          <CurrentLine>91</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\..\USER\inc\stm32f10x_conf.h</Name>
-          <ColumnNumber>27</ColumnNumber>
+          <Name>..\..\USER\src\test.h</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>3</CurrentLine>
+          <CurrentLine>13</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>869</TopLine>
+          <CurrentLine>875</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\USER\inc\functions.h</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>4</TopLine>
+          <CurrentLine>15</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

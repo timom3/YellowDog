@@ -13,3 +13,1250 @@ Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  EXTI9_5_IRQn     
 ---- BOOT 匹配 (2 在 2 文件 ) ----
 Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):#define BOOT                                    BIT(7)
 Stm32f10x_flash.h (libraries\stm32f10x_stdperiph_driver\inc):#define IS_FLASH_BOOT(BOOT) (((BOOT) == FLASH_BOOT_Bank1) || ((BOOT) == FLASH_BOOT_Bank2))
+---- for 匹配 (1250 在 56 文件 ) ----
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * ARM Limited (ARM) is supplying this software for use with Cortex-M 
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __INLINE         __inline                                   /*!< inline keyword for ARM Compiler       */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __ASM           __asm                                       /*!< asm keyword for IAR Compiler          */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __INLINE        inline                                      /*!< inline keyword for IAR Compiler. Only avaiable in High optimization mode! */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for GNU Compiler          */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for TASKING Compiler      */
+Core_cm3.c (libraries\cmsis\cm3\coresupport):  #define __INLINE         inline                                     /*!< inline keyword for TASKING Compiler   */
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 8 bit values)
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 16 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 32 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 8 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 16 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 32 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 8 bit value
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 16 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 32 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 8 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 16 bit values
+Core_cm3.c (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 32 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * ARM Limited (ARM) is supplying this software for use with Cortex-M 
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  This file defines all structures and symbols for CMSIS core:
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __NVIC_PRIO_BITS    4               /*!< standard definition for NVIC Priority Bits */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for Nested Vectored Interrupt Controller (NVIC)
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for System Control Block (SCB)
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for SysTick
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for Instrumentation Trace Macrocell (ITM)
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for Interrupt Type
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for Memory Protection Unit (MPU)
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  memory mapped structure for Core Debug Register
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __INLINE         __inline                                   /*!< inline keyword for ARM Compiler       */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __ASM           __asm                                       /*!< asm keyword for IAR Compiler          */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __INLINE        inline                                      /*!< inline keyword for IAR Compiler. Only avaiable in High optimization mode! */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for GNU Compiler          */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __INLINE         inline                                     /*!< inline keyword for GNU Compiler       */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __ASM            __asm                                      /*!< asm keyword for TASKING Compiler      */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  #define __INLINE         inline                                     /*!< inline keyword for TASKING Compiler   */
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 8 bit values)
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 16 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 32 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 8 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 16 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 32 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 8 bit value
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 16 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive LDR command for 32 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 8 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 16 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Exclusive STR command for 32 bit values
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Disable the interrupt line for external interrupt specified
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Read the interrupt pending bit for a device specific interrupt source
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Set the pending bit for an external interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  IRQn    The number of the interrupt for set pending
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Set the pending bit for the specified interrupt.
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Clear the pending bit for an external interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  IRQn    The number of the interrupt for clear pending
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Clear the pending bit for the specified interrupt. 
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Read the active bit for an external interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  IRQn    The number of the interrupt for read active bit
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Set the priority for an interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  IRQn      The number of the interrupt for set priority
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Set the priority for the specified interrupt. The interrupt 
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Note: The priority cannot be set for every core interrupt.
+Core_cm3.h (libraries\cmsis\cm3\coresupport):    SCB->SHP[((uint32_t)(IRQn) & 0xF)-4] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff); } /* set Priority for Cortex-M3 System Interrupts */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):    NVIC->IP[(uint32_t)(IRQn)] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff);    }        /* set Priority for device specific Interrupts  */
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Read the priority for an interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  IRQn      The number of the interrupt for get priority
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @return           The priority for the interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Read the priority for the specified interrupt. The interrupt 
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Note: The priority cannot be set for every core interrupt.
+Core_cm3.h (libraries\cmsis\cm3\coresupport):    return((uint32_t)(SCB->SHP[((uint32_t)(IRQn) & 0xF)-4] >> (8 - __NVIC_PRIO_BITS)));  } /* get priority for Cortex-M3 system interrupts */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):    return((uint32_t)(NVIC->IP[(uint32_t)(IRQn)]           >> (8 - __NVIC_PRIO_BITS)));  } /* get priority for device specific interrupts  */
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @brief  Encode the priority for an interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @return                  The encoded priority for the interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * Encode the priority for an interrupt with the given priority group,
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * The returned priority value can be used for NVIC_SetPriority(...) function
+Core_cm3.h (libraries\cmsis\cm3\coresupport): * @param  Priority           The priority for the interrupt
+Core_cm3.h (libraries\cmsis\cm3\coresupport):  NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):#define             ITM_RXBUFFER_EMPTY    0x5AA55AA5 /*!< value identifying ITM_RxBuffer is ready for next character */
+Core_cm3.h (libraries\cmsis\cm3\coresupport):    ITM_RxBuffer = ITM_RXBUFFER_EMPTY;       /* ready for next character */
+Functions.c (user\src):	for()
+I2C_DMA.c (e:\code\stm32f1)://use DMA1 channel7 for I2C receive:RRP read
+I2C_DMA.c (e:\code\stm32f1):	// Deinit the DMA1 Channel7 for I2C revieve
+I2C_DMA.c (e:\code\stm32f1):	/* Reset interrupt pending bits for DMA1 Channel6 */
+I2C_DMA.c (e:\code\stm32f1):	DMA_InitStructure.DMA_BufferSize = 255; /* Just for initialization */
+I2C_DMA.c (e:\code\stm32f1)://use DMA1 channel6 for I2C send:RRP write
+I2C_DMA.c (e:\code\stm32f1):	// Deinit the DMA1 Channel7 for I2C revieve
+I2C_DMA.c (e:\code\stm32f1):	/* Reset interrupt pending bits for DMA1 Channel6 */
+I2C_DMA.c (e:\code\stm32f1):	DMA_InitStructure.DMA_BufferSize = 255; /* Just for initialization */
+I2C_DMA.c (e:\code\stm32f1):	for(i=0; i<NumToWrite; i++)	
+I2C_DMA.c (e:\code\stm32f1):	I2C1->CR2 |= CR2_LAST_Set; //for the last byte,NACK
+I2c_ee_dma.c (e:\code\stm32f1\i2c_ee):	DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC; // fixed for receive function
+I2c_ee_dma.c (e:\code\stm32f1\i2c_ee):	DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralDST; // fixed for send function
+I2c_ee_dma.c (e:\code\stm32f1\i2c_ee):                  /* Send slave Address for read */
+I2c_ee_dma.c (e:\code\stm32f1\i2c_ee):                  /* Send slave Address for write */
+I2c_int.c (user\src):volatile uint32_t Jobs,Completed_Jobs;	//used for task control (only ever access this from outside for polling Jobs/Reading Completed_Jobs)
+I2c_int.c (user\src):		for(job=0;!((Jobs>>job)&0x00000001) && job<I2C_NUMBER_JOBS;job++);//find the first uncompleted job, starting at current job zero
+I2c_int.c (user\src):				//I2C1_Request_Job(MAGNO_SETUP_NO);//setup the magno for new single sample
+I2c_int.c (user\src):			I2C_GenerateSTART(I2C1,ENABLE);//send the start for the new job
+I2c_int.c (user\src):void I2C_Config() {			// Configure I2C1 for the sensor bus
+I2c_int.h (user\src):	const uint8_t address;	//device address for this job
+I2c_int.h (user\src):	const uint8_t subaddress;//register subaddress for the device - set to 0xFF if no subaddress used (direct read/write)
+I2c_int.h (user\src):extern volatile uint32_t Jobs,Completed_Jobs;	//used for task control (only ever access this from outside for polling Jobs/Reading Completed_Jobs)
+I2c_int.h (user\src)://Setup for the core sensors - other sensors have setup in their respective header files - look in /sensors 
+I2c_int.h (user\src):#define MAGNO_SETUP {0x18,0x20,0x00} /*configure the LSM303 magno for N.A./75hz,high resolution, continuous conversion (set to single later)*/
+I2c_int.h (user\src):#define ACCEL_SETUP {0x37,0x00,0x02,0x80} /*configure LSM303 acc for 400hz, no highpass, int1=DTRD, +-2G with blocking (0x90 for +-4G)*/
+I2c_int.h (user\src):#define GYRO_SETUP {0x07,0x1B,0x31} /*configure ITG gyro for 125hz,+-2000deg/s 42hz lowpass, int1=DTRD - no 50us pulse*/
+I2c_int.h (user\src):{LTC2481_R,I2C_Direction_Transmitter,1,0xFF,Pitot_conv}, /*Setup the Pitot for pressure conversions (could swap pointer to do temperature)*/\
+I2c_int.h (user\src):void I2C1_Setup_Job(uint8_t job_, volatile uint8_t* data);//Sets up the data pointer for a job
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):  value &= 0x80; //bit<6,5,1,0> must be =0 for correct working
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):  value &= 0x00; //bit<4-0> must be =0 for correct working
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):  value &= 0x00; //bit<7-3> must be =0 for correct working
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):* Description    : Enable/Disable High Pass Filter for click
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):* Description    : Enable/Disable High Pass Filter for AOI on INT_1
+Lsm303dlhc_driver.c (e:\code\stm32f1\lsm303dlhc_driver):* Description    : Enable/Disable High Pass Filter for AOI on INT_2
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):* Description        : Descriptor Header for l3g4200d driver file
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):#define STATUS_REG_ZDA                          0x04    // 0	:	a new data for the Z-Axis is not availvious one
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):                                                        // 1	:	a new data for the Z-Axis is available
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):#define STATUS_REG_YDA                          0x02    // 0	:	a new data for the Y-Axis is not available
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):                                                        // 1	:	a new data for the Y-Axis is available
+Lsm303dlhc_driver.h (e:\code\stm32f1\lsm303dlhc_driver):#define STATUS_REG_XDA                          0x01    // 0	:	a new data for the X-Axis is not available
+Main.c (user\src):  		for(i=0;i<100000;i++)
+Main.c (user\src):		for(i=0;i<100000;i++)
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg NVIC_PriorityGroup_0: 0 bits for pre-emption priority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                4 bits for subpriority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg NVIC_PriorityGroup_1: 1 bits for pre-emption priority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                3 bits for subpriority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg NVIC_PriorityGroup_2: 2 bits for pre-emption priority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                2 bits for subpriority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg NVIC_PriorityGroup_3: 3 bits for pre-emption priority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                1 bits for subpriority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg NVIC_PriorityGroup_4: 4 bits for pre-emption priority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                0 bits for subpriority
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  *         the configuration information for the specified NVIC peripheral.
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Selects the condition for the system to enter low power mode.
+Misc.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  LowPowerMode: Specifies the new mode for the system to enter low power mode.
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the miscellaneous
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t NVIC_IRQChannelPreemptionPriority;  /*!< Specifies the pre-emption priority for the IRQ channel
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t NVIC_IRQChannelSubPriority;         /*!< Specifies the subpriority level for the IRQ channel specified
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):   NVIC_PriorityGroup_0  |                0                  |            0-15             |   0 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                         |                                   |                             |   4 bits for subpriority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):   NVIC_PriorityGroup_1  |                0-1                |            0-7              |   1 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                         |                                   |                             |   3 bits for subpriority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):   NVIC_PriorityGroup_2  |                0-3                |            0-3              |   2 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                         |                                   |                             |   2 bits for subpriority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):   NVIC_PriorityGroup_3  |                0-7                |            0-1              |   3 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                         |                                   |                             |   1 bits for subpriority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):   NVIC_PriorityGroup_4  |                0-15               |            0                |   4 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                         |                                   |                             |   0 bits for subpriority                       
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):#define NVIC_PriorityGroup_0         ((uint32_t)0x700) /*!< 0 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                                                            4 bits for subpriority */
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):#define NVIC_PriorityGroup_1         ((uint32_t)0x600) /*!< 1 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                                                            3 bits for subpriority */
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):#define NVIC_PriorityGroup_2         ((uint32_t)0x500) /*!< 2 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                                                            2 bits for subpriority */
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):#define NVIC_PriorityGroup_3         ((uint32_t)0x400) /*!< 3 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                                                            1 bits for subpriority */
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):#define NVIC_PriorityGroup_4         ((uint32_t)0x300) /*!< 4 bits for pre-emption priority
+Misc.h (libraries\stm32f10x_stdperiph_driver\inc):                                                            0 bits for subpriority */
+PPP_init.c (user\src):	// RCC system reset(for debug purpose)
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  *          definitions and memory mapping for STM32F10x Connectivity line, 
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  *           - Data structures and the address mapping for all peripherals
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define HSE_STARTUP_TIMEOUT   ((uint16_t)0x0500) /*!< Time out for HSE start up */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define __NVIC_PRIO_BITS          4 /*!< STM32 uses 4 Bits for the Priority Levels    */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!< STM32F10x Standard Peripheral Library old types (maintained for legacy purpose) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!< STM32F10x Standard Peripheral Library old definitions (maintained for legacy purpose) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CRC_DR register  *********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CRC_IDR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CRC_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for PWR_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for PWR_CSR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR3 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR4 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR5 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR6 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR7 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR8 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR9 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR10 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR11 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR12 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR13 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR14 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR15 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR16 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR17 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for BKP_DR18 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR19 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR20 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR21 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR22 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR23 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR24 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR25 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR26 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR27 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR28 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR29 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR30 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR31 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR32 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR33 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR34 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR35 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR36 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR37 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR38 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR39 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR40 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR41 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_DR42 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for BKP_RTCCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for BKP_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for BKP_CSR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for RCC_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_CFGR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  RCC_CFGR_PLLXTPRE                   ((uint32_t)0x00020000)        /*!< HSE divider for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_PREDIV1          ((uint32_t)0x00000000)        /*!< PREDIV1 clock not divided for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_PREDIV1_Div2     ((uint32_t)0x00020000)        /*!< PREDIV1 clock divided by 2 for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_PREDIV1          ((uint32_t)0x00000000)        /*!< PREDIV1 clock not divided for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_PREDIV1_Div2     ((uint32_t)0x00020000)        /*!< PREDIV1 clock divided by 2 for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_HSE              ((uint32_t)0x00000000)        /*!< HSE clock not divided for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x): #define  RCC_CFGR_PLLXTPRE_HSE_Div2         ((uint32_t)0x00020000)        /*!< HSE clock divided by 2 for PLL entry */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!<******************  Bit definition for RCC_CIR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for RCC_APB2RSTR register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for RCC_APB1RSTR register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for RCC_AHBENR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for RCC_APB2ENR register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for RCC_APB1ENR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_BDCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_CSR register  ********************/  
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_AHBRSTR register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_CFGR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RCC_CFGR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for GPIO_CRL register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for GPIO_CRH register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!<******************  Bit definition for GPIO_IDR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for GPIO_ODR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for GPIO_BSRR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for GPIO_BRR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for GPIO_LCKR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for AFIO_EVCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for AFIO_MAPR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for AFIO_EXTICR1 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for AFIO_EXTICR2 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for AFIO_EXTICR3 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for AFIO_EXTICR4 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for AFIO_MAPR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for AFIO_MAPR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SysTick_CTRL register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SysTick_LOAD register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SysTick_VAL register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SysTick_CALIB register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SysTick_CALIB_TENMS                 ((uint32_t)0x00FFFFFF)        /*!< Reload value to use for 10ms timing */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_ISER register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_ICER register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_ISPR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_ICPR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_IABR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI0 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI5 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI6 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for NVIC_PRI7 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SCB_CPUID register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_ICSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_VTOR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!<*****************  Bit definition for SCB_AIRCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_SCR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for SCB_CCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SCB_CCR_UNALIGN_TRP                 ((uint16_t)0x0008)            /*!< Trap for unaligned access */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_SHPR register ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SCB_SHCSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_CFSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_HFSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_DFSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_MMFAR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_BFAR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SCB_afsr register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for EXTI_IMR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for EXTI_EMR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for EXTI_RTSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for EXTI_FTSR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for EXTI_SWIER register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for EXTI_PR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR0                         ((uint32_t)0x00000001)        /*!< Pending bit for line 0 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR1                         ((uint32_t)0x00000002)        /*!< Pending bit for line 1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR2                         ((uint32_t)0x00000004)        /*!< Pending bit for line 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR3                         ((uint32_t)0x00000008)        /*!< Pending bit for line 3 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR4                         ((uint32_t)0x00000010)        /*!< Pending bit for line 4 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR5                         ((uint32_t)0x00000020)        /*!< Pending bit for line 5 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR6                         ((uint32_t)0x00000040)        /*!< Pending bit for line 6 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR7                         ((uint32_t)0x00000080)        /*!< Pending bit for line 7 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR8                         ((uint32_t)0x00000100)        /*!< Pending bit for line 8 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR9                         ((uint32_t)0x00000200)        /*!< Pending bit for line 9 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR10                        ((uint32_t)0x00000400)        /*!< Pending bit for line 10 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR11                        ((uint32_t)0x00000800)        /*!< Pending bit for line 11 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR12                        ((uint32_t)0x00001000)        /*!< Pending bit for line 12 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR13                        ((uint32_t)0x00002000)        /*!< Pending bit for line 13 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR14                        ((uint32_t)0x00004000)        /*!< Pending bit for line 14 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR15                        ((uint32_t)0x00008000)        /*!< Pending bit for line 15 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR16                        ((uint32_t)0x00010000)        /*!< Pending bit for line 16 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR17                        ((uint32_t)0x00020000)        /*!< Pending bit for line 17 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR18                        ((uint32_t)0x00040000)        /*!< Pending bit for line 18 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  EXTI_PR_PR19                        ((uint32_t)0x00080000)        /*!< Pending bit for line 19 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_ISR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_IFCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_CCR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_CCR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_CCR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*!<******************  Bit definition for DMA_CCR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CCR5 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_CCR6 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DMA_CCR7 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR4 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR5 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR6 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CNDTR7 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR5 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR6 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CPAR7 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR5 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR6 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DMA_CMAR7 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for ADC_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_CR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR1_EOCIE                       ((uint32_t)0x00000020)        /*!< Interrupt enable for EOC */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR1_JEOCIE                      ((uint32_t)0x00000080)        /*!< Interrupt enable for injected channels */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_CR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR2_JEXTSEL                     ((uint32_t)0x00007000)        /*!< JEXTSEL[2:0] bits (External event select for injected group) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR2_JEXTTRIG                    ((uint32_t)0x00008000)        /*!< External Trigger Conversion mode for injected channels */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR2_EXTSEL                      ((uint32_t)0x000E0000)        /*!< EXTSEL[2:0] bits (External Event Select for regular group) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_CR2_EXTTRIG                     ((uint32_t)0x00100000)        /*!< External Trigger Conversion mode for regular channels */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_SMPR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_SMPR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_JOFR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_JOFR1_JOFFSET1                  ((uint16_t)0x0FFF)            /*!< Data offset for injected channel 1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_JOFR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_JOFR2_JOFFSET2                  ((uint16_t)0x0FFF)            /*!< Data offset for injected channel 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_JOFR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_JOFR3_JOFFSET3                  ((uint16_t)0x0FFF)            /*!< Data offset for injected channel 3 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for ADC_JOFR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  ADC_JOFR4_JOFFSET4                  ((uint16_t)0x0FFF)            /*!< Data offset for injected channel 4 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_HTR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_LTR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_SQR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_SQR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_SQR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_JSQR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_JDR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_JDR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_JDR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for ADC_JDR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for ADC_DR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for DAC_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_SWTRIGR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12L1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DAC_DHR8R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12L2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DAC_DHR8R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12RD register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for DAC_DHR12LD register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DAC_DHR8RD register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DAC_DOR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for DAC_DOR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for DAC_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_CFGR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_OAR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_PRES register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_ESR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_CSR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_TXD register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CEC_RXD register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_SMCR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_DIER register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for TIM_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_EGR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for TIM_CCMR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for TIM_CCMR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CCER register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CNT register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_PSC register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_ARR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_RCR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CCR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CCR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CCR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_CCR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_BDTR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  TIM_BDTR_OSSI                       ((uint16_t)0x0400)            /*!< Off-State Selection for Idle mode */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  TIM_BDTR_OSSR                       ((uint16_t)0x0800)            /*!< Off-State Selection for Run mode */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_DCR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for TIM_DMAR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  TIM_DMAR_DMAB                       ((uint16_t)0xFFFF)            /*!< DMA register for burst accesses */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_CRH register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_CRL register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_PRLH register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_PRLL register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_DIVH register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_DIVL register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_CNTH register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_CNTL register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_ALRH register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for RTC_ALRL register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for IWDG_KR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for IWDG_PR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for IWDG_RLR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for IWDG_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for WWDG_CR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for WWDG_CFR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for WWDG_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BCR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BCR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BCR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BCR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BTR1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BTR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FSMC_BTR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BTR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BWTR1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BWTR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BWTR3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_BWTR4 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PCR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PCR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PCR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FSMC_SR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FSMC_SR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FSMC_SR4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PMEM2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PMEM3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PMEM4 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PATT2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PATT3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PATT4 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_PIO4 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_ECCR2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FSMC_ECCR3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_POWER register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_CLKCR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SDIO_ARG register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SDIO_CMD register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SDIO_CMD_WAITRESP                   ((uint16_t)0x00C0)            /*!< WAITRESP[1:0] bits (Wait for response bits) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SDIO_CMD_WAITINT                    ((uint16_t)0x0100)            /*!< CPSM Waits for Interrupt Request */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SDIO_CMD_WAITPEND                   ((uint16_t)0x0200)            /*!< CPSM Waits for ends of data transfer (CmdPend internal signal) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SDIO_RESPCMD register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_RESP0 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_RESP1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_RESP2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_RESP3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_RESP4 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_DTIMER register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_DLEN register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_DCTRL register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_DCOUNT register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_STA register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SDIO_STA_CEATAEND                   ((uint32_t)0x00800000)        /*!< CE-ATA command completion signal received for CMD61 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SDIO_ICR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_MASK register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for SDIO_FIFOCNT register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SDIO_FIFO register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP0R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP1R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP2R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP2R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP3R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP3R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP4R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP4R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP5R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP5R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP6R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP6R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_EP7R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_STAT_TX                    ((uint16_t)0x0030)            /*!< STAT_TX[1:0] bits (Status bits, for transmission transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_DTOG_TX                    ((uint16_t)0x0040)            /*!< Data Toggle, for transmission transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_CTR_TX                     ((uint16_t)0x0080)            /*!< Correct Transfer for transmission */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_STAT_RX                    ((uint16_t)0x3000)            /*!< STAT_RX[1:0] bits (Status bits, for reception transfers) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_DTOG_RX                    ((uint16_t)0x4000)            /*!< Data Toggle, for reception transfers */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  USB_EP7R_CTR_RX                     ((uint16_t)0x8000)            /*!< Correct Transfer for reception */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_CNTR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_ISTR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USB_FNR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USB_DADDR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USB_BTABLE register  ******************/    
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR0_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR1_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR2_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR3_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR4_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR5_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR6_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR7_TX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT0_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT1_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT2_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT3_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT4_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT5_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT6_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT7_TX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT0_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT0_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT1_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT1_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT2_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT2_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT3_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT3_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT4_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT4_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT5_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT5_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT6_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT6_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT7_TX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT7_TX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR0_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR1_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR2_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR3_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR4_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR5_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR6_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_ADDR7_RX register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT0_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT1_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT2_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT3_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT4_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT5_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT6_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for USB_COUNT7_RX register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT0_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT0_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT1_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT1_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT2_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT2_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT3_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT3_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT4_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT4_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT5_RX_0 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT5_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/***************  Bit definition for USB_COUNT6_RX_0  register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for USB_COUNT6_RX_1 register  ***************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/***************  Bit definition for USB_COUNT7_RX_0 register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/***************  Bit definition for USB_COUNT7_RX_1 register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_MCR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_MSR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TSR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ALST0                       ((uint32_t)0x00000004)        /*!< Arbitration Lost for Mailbox0 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ABRQ0                       ((uint32_t)0x00000080)        /*!< Abort Request for Mailbox0 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ALST1                       ((uint32_t)0x00000400)        /*!< Arbitration Lost for Mailbox1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ABRQ1                       ((uint32_t)0x00008000)        /*!< Abort Request for Mailbox 1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ALST2                       ((uint32_t)0x00040000)        /*!< Arbitration Lost for mailbox 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_ABRQ2                       ((uint32_t)0x00800000)        /*!< Abort Request for Mailbox 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_LOW0                        ((uint32_t)0x20000000)        /*!< Lowest Priority Flag for Mailbox 0 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_LOW1                        ((uint32_t)0x40000000)        /*!< Lowest Priority Flag for Mailbox 1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_TSR_LOW2                        ((uint32_t)0x80000000)        /*!< Lowest Priority Flag for Mailbox 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RF0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RF1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CAN_IER register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for CAN_ESR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_BTR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for CAN_TI0R register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for CAN_TDT0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for CAN_TDL0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for CAN_TDH0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TI1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDT1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDL1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDH1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TI2R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDT2R register  ******************/  
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDL2R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_TDH2R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RI0R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDT0R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDL0R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDH0R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RI1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDT1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDL1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_RDH1R register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_FMR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_FM1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_FS1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for CAN_FFA1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA0                      ((uint16_t)0x0001)            /*!< Filter FIFO Assignment for Filter 0 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA1                      ((uint16_t)0x0002)            /*!< Filter FIFO Assignment for Filter 1 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA2                      ((uint16_t)0x0004)            /*!< Filter FIFO Assignment for Filter 2 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA3                      ((uint16_t)0x0008)            /*!< Filter FIFO Assignment for Filter 3 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA4                      ((uint16_t)0x0010)            /*!< Filter FIFO Assignment for Filter 4 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA5                      ((uint16_t)0x0020)            /*!< Filter FIFO Assignment for Filter 5 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA6                      ((uint16_t)0x0040)            /*!< Filter FIFO Assignment for Filter 6 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA7                      ((uint16_t)0x0080)            /*!< Filter FIFO Assignment for Filter 7 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA8                      ((uint16_t)0x0100)            /*!< Filter FIFO Assignment for Filter 8 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA9                      ((uint16_t)0x0200)            /*!< Filter FIFO Assignment for Filter 9 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA10                     ((uint16_t)0x0400)            /*!< Filter FIFO Assignment for Filter 10 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA11                     ((uint16_t)0x0800)            /*!< Filter FIFO Assignment for Filter 11 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA12                     ((uint16_t)0x1000)            /*!< Filter FIFO Assignment for Filter 12 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  CAN_FFA1R_FFA13                     ((uint16_t)0x2000)            /*!< Filter FIFO Assignment for Filter 13 */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_FA1R register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F0R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F1R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F2R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F3R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F4R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F5R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F6R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F7R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F8R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F9R1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F10R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F11R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F12R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F13R1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F0R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F1R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F2R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F3R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F4R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F5R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F6R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F7R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F8R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F9R2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F10R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F11R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F12R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for CAN_F13R2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SPI_CR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SPI_CR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for SPI_SR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for SPI_DR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for SPI_CRCPR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SPI_RXCRCR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SPI_TXCRCR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SPI_I2SCFGR register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for SPI_I2SPR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  SPI_I2SPR_ODD                       ((uint16_t)0x0100)            /*!< Odd factor for the prescaler */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_CR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define  I2C_CR1_POS                         ((uint16_t)0x0800)            /*!< Acknowledge/PEC Position (for data reception) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_CR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_OAR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_OAR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/********************  Bit definition for I2C_DR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_SR1 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_SR2 register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for I2C_CCR register  ********************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for I2C_TRISE register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USART_SR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for USART_DR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USART_BRR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USART_CR1 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USART_CR2 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USART_CR3 register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for USART_GTPR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/****************  Bit definition for DBGMCU_IDCODE register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for DBGMCU_CR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FLASH_ACR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_KEYR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*****************  Bit definition for FLASH_OPTKEYR register  ****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_SR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FLASH_CR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/*******************  Bit definition for FLASH_AR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_OBR register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_WRPR register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_RDP register  *******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_USER register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_Data0 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_Data1 register  *****************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_WRP0 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_WRP1 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_WRP2 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/******************  Bit definition for FLASH_WRP3 register  ******************/
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Control Register register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Frame Filter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Hash Table High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Hash Table Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC MII Address Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC MII Data Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Flow Control Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC VLAN Tag Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define ETH_MACVLANTR_VLANTI ((uint32_t)0x0000FFFF)  /* VLAN tag identifier (for receive frames) */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Remote Wake-UpFrame Filter Register */ 
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC PMT Control and Status Register */ 
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Status Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Interrupt Mask Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address0 High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address0 Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address1 High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define ETH_MACA1HR_MBC      ((uint32_t)0x3F000000)  /* Mask byte control: bits to mask for comparison of the MAC Address bytes */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address1 Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address2 High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address2 Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address3 High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MAC Address3 Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Contol Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Receive Interrupt Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Transmit Interrupt Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Receive Interrupt Mask Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Transmit Interrupt Mask Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Transmitted Good Frames after Single Collision Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Transmitted Good Frames after More than a Single Collision Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Transmitted Good Frames Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Received Frames with CRC Error Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Received Frames with Alignement Error Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet MMC Received Good Unicast Frames Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp Contol Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Sub-Second Increment Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp High Update Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp Low Update Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Time Stamp Addend Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Target Time High Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet PTP Target Time Low Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Bus Mode Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Transmit Poll Demand Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Receive Poll Demand Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Receive Descriptor List Address Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Transmit Descriptor List Address Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Status Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  /* combination with EBS[2:0] for GetFlagStatus function */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  #define ETH_DMASR_TPS_Waiting         ((uint32_t)0x00200000)  /* Running - waiting for status */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):  #define ETH_DMASR_RPS_Waiting         ((uint32_t)0x00060000)  /* Running - waiting for packet */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Operation Mode Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Interrupt Enable Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Missed Frame and Buffer Overflow Counter Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define ETH_DMAMFBOCR_OFOC   ((uint32_t)0x10000000)  /* Overflow bit for FIFO overflow counter */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):#define ETH_DMAMFBOCR_OMFC   ((uint32_t)0x00010000)  /* Overflow bit for missed frame counter */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Current Host Transmit Descriptor Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Current Host Receive Descriptor Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Current Host Transmit Buffer Address Register */
+Stm32f10x.h (libraries\cmsis\cm3\devicesupport\st\stm32f10x):/* Bit definition for Ethernet DMA Current Host Receive Buffer Address Register */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *         the configuration information for the specified ADC peripheral.
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures the discontinuous mode for the selected ADC regular
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *         channel for the specified ADC
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures for the selected ADC regular channel its corresponding
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  ADC_SampleTime: The sample time value to be set for the selected channel. 
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Clear the old SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set the SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Clear the old SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set the SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Clear the old SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set the SQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns the last ADCx conversion result data for regular channel.
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Enables or disables the discontinuous mode for injected group
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *         channel for the specified ADC
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures the ADCx external trigger for injected channels conversion.
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T1_TRGO: Timer1 TRGO event selected (for ADC1, ADC2 and ADC3)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T1_CC4: Timer1 capture compare4 selected (for ADC1, ADC2 and ADC3)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T2_TRGO: Timer2 TRGO event selected (for ADC1 and ADC2)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T2_CC1: Timer2 capture compare1 selected (for ADC1 and ADC2)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T3_CC4: Timer3 capture compare4 selected (for ADC1 and ADC2)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T4_TRGO: Timer4 TRGO event selected (for ADC1 and ADC2)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                                       capture compare4 event selected (for ADC1 and ADC2)                       
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T4_CC3: Timer4 capture compare3 selected (for ADC3 only)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T8_CC2: Timer8 capture compare2 selected (for ADC3 only)                         
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T8_CC4: Timer8 capture compare4 selected (for ADC3 only)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T5_TRGO: Timer5 TRGO event selected (for ADC3 only)                         
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg ADC_ExternalTrigInjecConv_T5_CC4: Timer5 capture compare4 selected (for ADC3 only)                        
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  *                                          by external trigger (for ADC1, ADC2 and ADC3)
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  /* Clear the old external event selection for injected group */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  /* Set the external event selection for injected group */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable the selected ADC external event selection for injected group */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable the selected ADC external event selection for injected group */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable the selected ADC conversion for injected group on external event and start the selected
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable the selected ADC conversion on external event for injected group and stop the selected
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures for the selected ADC injected channel its corresponding
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  ADC_SampleTime: The sample time value to be set for the selected channel. 
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  /* Clear the old JSQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  /* Set the JSQx bits for the selected rank */
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures the sequencer length for injected channels
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  Offset: the offset value for the selected ADC injected channel
+Stm32f10x_adc.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  ADC_Channel: the ADC channel to configure for the analog watchdog. 
+Stm32f10x_adc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the ADC firmware 
+Stm32f10x_adc.h (libraries\stm32f10x_stdperiph_driver\inc):                                               using the sequencer for regular channel group.
+Stm32f10x_bkp.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the BKP firmware 
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):/* Time out for INAK bit */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):/* Time out for SLAK bit */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  *                         contains the configuration information for the 
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  /* Initialisation mode for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /* 16-bit scale for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /* 32-bit scale for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /*Id/Mask mode for the filter*/
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /*Identifier list mode for the filter*/
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /* FIFO 0 assignation for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):    /* FIFO 1 assignation for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  /* Leave the initialisation mode for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Select the start bank filter for slave CAN.
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  /* Enter Initialisation mode for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  /* Leave Initialisation mode for the filter */
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Enables or disables the DBG Freeze for CAN.
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  * @retval The number of the mailbox that is used for transmission
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  TransmitMailbox: the number of the mailbox that is used for 
+Stm32f10x_can.c (libraries\stm32f10x_stdperiph_driver\src):  /* Timeout for INAK or also for SLAK bits*/
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the CAN firmware 
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t CAN_FilterIdHigh;         /*!< Specifies the filter identification number (MSBs for a 32-bit
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              configuration, first one for a 16-bit configuration).
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t CAN_FilterIdLow;          /*!< Specifies the filter identification number (LSBs for a 32-bit
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              configuration, second one for a 16-bit configuration).
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              according to the mode (MSBs for a 32-bit configuration,
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              first one for a 16-bit configuration).
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              according to the mode (LSBs for a 32-bit configuration,
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):                                              second one for a 16-bit configuration).
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t IDE;     /*!< Specifies the type of identifier for the message that 
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t RTR;     /*!< Specifies the type of frame for the message that will 
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t IDE;     /*!< Specifies the type of identifier for the message that 
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):  uint8_t RTR;     /*!< Specifies the type of frame for the received message.
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):#define CAN_Filter_FIFO0             ((uint8_t)0x00)  /*!< Filter FIFO 0 assignment for filter x */
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):#define CAN_Filter_FIFO1             ((uint8_t)0x01)  /*!< Filter FIFO 1 assignment for filter x */
+Stm32f10x_can.h (libraries\stm32f10x_stdperiph_driver\inc):/* Flags named as Interrupts : kept only for FW compatibility */
+Stm32f10x_cec.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the configuration information for the specified
+Stm32f10x_cec.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the CEC firmware 
+Stm32f10x_conf.h (user\inc):#include "misc.h" /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
+Stm32f10x_conf.h (user\inc):  * @brief  The assert_param macro is used for function's parameters check.
+Stm32f10x_crc.c (libraries\stm32f10x_stdperiph_driver\src):  for(index = 0; index < BufferLength; index++)
+Stm32f10x_crc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the CRC firmware 
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  *        contains the configuration information for the specified DAC channel.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  /* Configure for the selected DAC channel: buffer output, trigger, wave generation,
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):     mask/amplitude for wave generation */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable software trigger for the selected DAC channel */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable software trigger for the selected DAC channel */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable software trigger for both DAC channels */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable software trigger for both DAC channels */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable the selected wave generation for the selected DAC channel */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable the selected wave generation for the selected DAC channel */
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Set the specified data holding register value for DAC channel1.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  DAC_Align: Specifies the data alignment for DAC channel1.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Set the specified data holding register value for DAC channel2.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  DAC_Align: Specifies the data alignment for DAC channel2.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Set the specified data holding register value for dual channel
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  DAC_Align: Specifies the data alignment for dual channel DAC.
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  Data2: Data for DAC Channel2 to be loaded in the selected data 
+Stm32f10x_dac.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  Data1: Data for DAC Channel1 to be loaded in the selected data 
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the DAC firmware 
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t DAC_Trigger;                      /*!< Specifies the external trigger for the selected DAC channel.
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t DAC_LFSRUnmask_TriangleAmplitude; /*!< Specifies the LFSR mask for noise wave generation or
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):                                                  the maximum amplitude triangle generation for the DAC channel. 
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T6_TRGO                ((uint32_t)0x00000004) /*!< TIM6 TRGO selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T8_TRGO                ((uint32_t)0x0000000C) /*!< TIM8 TRGO selected as external conversion trigger for DAC channel
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T3_TRGO                ((uint32_t)0x0000000C) /*!< TIM8 TRGO selected as external conversion trigger for DAC channel
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T7_TRGO                ((uint32_t)0x00000014) /*!< TIM7 TRGO selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T5_TRGO                ((uint32_t)0x0000001C) /*!< TIM5 TRGO selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T15_TRGO               ((uint32_t)0x0000001C) /*!< TIM15 TRGO selected as external conversion trigger for DAC channel 
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T2_TRGO                ((uint32_t)0x00000024) /*!< TIM2 TRGO selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_T4_TRGO                ((uint32_t)0x0000002C) /*!< TIM4 TRGO selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_Ext_IT9                ((uint32_t)0x00000034) /*!< EXTI Line9 event selected as external conversion trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_Trigger_Software               ((uint32_t)0x0000003C) /*!< Conversion started by software trigger for DAC channel */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bit0                ((uint32_t)0x00000000) /*!< Unmask DAC channel LFSR bit0 for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits1_0             ((uint32_t)0x00000100) /*!< Unmask DAC channel LFSR bit[1:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits2_0             ((uint32_t)0x00000200) /*!< Unmask DAC channel LFSR bit[2:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits3_0             ((uint32_t)0x00000300) /*!< Unmask DAC channel LFSR bit[3:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits4_0             ((uint32_t)0x00000400) /*!< Unmask DAC channel LFSR bit[4:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits5_0             ((uint32_t)0x00000500) /*!< Unmask DAC channel LFSR bit[5:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits6_0             ((uint32_t)0x00000600) /*!< Unmask DAC channel LFSR bit[6:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits7_0             ((uint32_t)0x00000700) /*!< Unmask DAC channel LFSR bit[7:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits8_0             ((uint32_t)0x00000800) /*!< Unmask DAC channel LFSR bit[8:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits9_0             ((uint32_t)0x00000900) /*!< Unmask DAC channel LFSR bit[9:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits10_0            ((uint32_t)0x00000A00) /*!< Unmask DAC channel LFSR bit[10:0] for noise wave generation */
+Stm32f10x_dac.h (libraries\stm32f10x_stdperiph_driver\inc):#define DAC_LFSRUnmask_Bits11_0            ((uint32_t)0x00000B00) /*!< Unmask DAC channel LFSR bit[11:0] for noise wave generation */
+Stm32f10x_dbgmcu.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the DBGMCU 
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel1 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel2 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel3 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel4 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel5 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel6 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA1 Channel7 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA2 Channel1 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA2 Channel2 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA2 Channel3 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset interrupt pending bits for DMA2 Channel4 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):      /* Reset interrupt pending bits for DMA2 Channel5 */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the configuration information for the specified DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *         x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   x can be 1 to 7 for DMA1 and 1 to 5 for DMA2 to select the DMA Channel.
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  /* Return the number of remaining data units for DMAy Channelx */
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   This parameter can be any combination (for the same DMA) of the following values:
+Stm32f10x_dma.c (libraries\stm32f10x_stdperiph_driver\src):  *   This parameter can be any combination (for the same DMA) of the following values:
+Stm32f10x_dma.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the DMA firmware 
+Stm32f10x_dma.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t DMA_PeripheralBaseAddr; /*!< Specifies the peripheral base address for DMAy Channelx. */
+Stm32f10x_dma.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t DMA_MemoryBaseAddr;     /*!< Specifies the memory base address for DMAy Channelx. */
+Stm32f10x_dma.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t DMA_Priority;           /*!< Specifies the software priority for the DMAy Channelx.
+Stm32f10x_exti.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the EXTI peripheral.
+Stm32f10x_exti.c (libraries\stm32f10x_stdperiph_driver\src):    /* Select the trigger for the selected external interrupts */
+Stm32f10x_exti.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the EXTI firmware
+Stm32f10x_exti.h (libraries\stm32f10x_stdperiph_driver\inc):  EXTIMode_TypeDef EXTI_Mode;       /*!< Specifies the mode for the EXTI lines.
+Stm32f10x_exti.h (libraries\stm32f10x_stdperiph_driver\inc):  EXTITrigger_TypeDef EXTI_Trigger; /*!< Specifies the trigger signal active edge for the EXTI lines.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src): STM32F10x_XL devices feature up to 1 Mbyte with dual bank architecture for read-while-write (RWW) capability:
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src): dedicated for XL devices only.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   * Legacy functions used for all STM32F10x devices *
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   |FLASH_GetStatus                     |    Yes     |      Yes      | - Return the status of Bank1 (for all devices)                 |
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   |FLASH_WaitForLastOperation          |    Yes     |      Yes      | - Wait for Bank1 last operation (for all devices)              |
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   * New functions used for all STM32F10x devices to manage Bank1:                                                        *
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   *   - These functions are mainly useful for STM32F10x_XL density devices, to have separate control for Bank1 and bank2 *
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   | FLASH_WaitForLastBank1Operation    |    Yes     |      Yes      | - Wait for Bank1 last operation                                |
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):   | FLASH_WaitForLastBank2Operation    |    Yes     |      No       | - Wait for Bank2 last operation                                |
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used only for STM32F10X_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   this function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used only for STM32F10X_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used only for STM32F10x_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):        /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):        /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):      /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used only for STM32F10x_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):    /* Wait for last operation to be completed */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):              for Bank1 and Bank2.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  *         - For other devices it enables or disables the specified FLASH interrupts for Bank1.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices, it is equivalent
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices, it is equivalent
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for STM32F10x_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Waits for a Flash operation to complete or a TIMEOUT to occur.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices, 
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  *         - For STM32F10X_XL devices this function waits for a Bank1 Flash operation
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  *         - For all other devices it waits for a Flash operation to complete 
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Check for the Flash Status */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Waits for a Flash operation on Bank1 to complete or a TIMEOUT to occur.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used for all STM32F10x devices, 
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Check for the Flash Status */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Waits for a Flash operation on Bank2 to complete or a TIMEOUT to occur.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   This function can be used only for STM32F10x_XL density devices.
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Check for the Flash Status */
+Stm32f10x_flash.c (libraries\stm32f10x_stdperiph_driver\src):  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+Stm32f10x_flash.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the FLASH 
+Stm32f10x_flash.h (libraries\stm32f10x_stdperiph_driver\inc):/*------------ Functions used for all STM32F10x devices -----*/
+Stm32f10x_flash.h (libraries\stm32f10x_stdperiph_driver\inc):/*------------ New function used for all STM32F10x devices -----*/
+Stm32f10x_fsmc.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for 
+Stm32f10x_fsmc.c (libraries\stm32f10x_stdperiph_driver\src):  /* Bank1 NOR/SRAM timing register for write configuration, if extended mode is used */
+Stm32f10x_fsmc.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for the FSMC 
+Stm32f10x_fsmc.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for the FSMC 
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the FSMC firmware 
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                             @note: It is used for SRAMs, ROMs and asynchronous multiplexed NOR Flash memories. */
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                             @note: It is only used for multiplexed NOR Flash memories. */
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                             @note: This parameter is not used for asynchronous NOR Flash, SRAM or ROM accesses. */
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t FSMC_BurstAccessMode;     /*!< Enables or disables the burst access mode for Flash memory,
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t FSMC_WrapMode;            /*!< Enables or disables the Wrapped burst access mode for Flash
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                          signal, valid for Flash memory access in burst mode. 
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  FSMC_NORSRAMTimingInitTypeDef* FSMC_ReadWriteTimingStruct; /*!< Timing Parameters for write and read access if the  ExtendedMode is not used*/  
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  FSMC_NORSRAMTimingInitTypeDef* FSMC_WriteTimingStruct;     /*!< Timing Parameters for write access if the  ExtendedMode is used*/      
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                     the command assertion for NAND-Flash read or write access
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                     command for NAND-Flash read or write access to
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                     (and data for write access) after the command deassertion
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):                                     for NAND-Flash read or write access to common/Attribute
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t FSMC_Waitfeature;      /*!< Enables or disables the Wait feature for the NAND Memory Bank.
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t FSMC_ECCPageSize;      /*!< Defines the page size for the extended ECC.
+Stm32f10x_fsmc.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t FSMC_Waitfeature;    /*!< Enables or disables the Wait feature for the Memory Bank.
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the configuration information for the specified GPIO peripheral.
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):    for (pinpos = 0x00; pinpos < 0x08; pinpos++)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):    for (pinpos = 0x00; pinpos < 0x08; pinpos++)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *   for Event output.
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  GPIO_PinSource: specifies the pin for the Event output.
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM5CH4_LSI      : LSI connected to TIM5 Channel4 input capture for calibration
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_ETH              : Ethernet remapping (only for Connectivity line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_CAN2             : CAN2 remapping (only for Connectivity line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_SPI3             : SPI3/I2S3 Alternate Function mapping (only for Connectivity line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *                                        to TIM2 Internal Trigger 1 for calibration (only for Connectivity line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_PTP_PPS          : Ethernet MAC PPS_PTS output on PB05 (only for Connectivity line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM15            : TIM15 Alternate Function mapping (only for Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM16            : TIM16 Alternate Function mapping (only for Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM17            : TIM17 Alternate Function mapping (only for Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_CEC              : CEC Alternate Function mapping (only for Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM1_DMA         : TIM1 DMA requests mapping (only for Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM9             : TIM9 Alternate Function mapping (only for XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM10            : TIM10 Alternate Function mapping (only for XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM11            : TIM11 Alternate Function mapping (only for XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM13            : TIM13 Alternate Function mapping (only for High density Value line and XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM14            : TIM14 Alternate Function mapping (only for High density Value line and XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_FSMC_NADV        : FSMC_NADV Alternate Function mapping (only for High density Value line and XL-density devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM67_DAC_DMA    : TIM6/TIM7 and DAC DMA requests remapping (only for High density Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg GPIO_Remap_TIM12            : TIM12 Alternate Function mapping (only for High density Value line devices)
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  *                                        only for High density Value line devices)     
+Stm32f10x_gpio.c (libraries\stm32f10x_stdperiph_driver\src):  * @param  GPIO_PortSource: selects the GPIO port to be used as source for EXTI lines.
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the GPIO 
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):  GPIOSpeed_TypeDef GPIO_Speed;  /*!< Specifies the speed for the selected pins.
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):  GPIOMode_TypeDef GPIO_Mode;    /*!< Specifies the operating mode for the selected pins.
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM5CH4_LSI      ((uint32_t)0x00200001)  /*!< LSI connected to TIM5 Channel4 input capture for calibration */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_ETH              ((uint32_t)0x00200020)  /*!< Ethernet remapping (only for Connectivity line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_CAN2             ((uint32_t)0x00200040)  /*!< CAN2 remapping (only for Connectivity line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_SPI3             ((uint32_t)0x00201100)  /*!< SPI3/I2S3 Alternate Function mapping (only for Connectivity line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):                                                                 to TIM2 Internal Trigger 1 for calibration
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):                                                                 (only for Connectivity line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_PTP_PPS          ((uint32_t)0x00204000)  /*!< Ethernet MAC PPS_PTS output on PB05 (only for Connectivity line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM15            ((uint32_t)0x80000001)  /*!< TIM15 Alternate Function mapping (only for Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM16            ((uint32_t)0x80000002)  /*!< TIM16 Alternate Function mapping (only for Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM17            ((uint32_t)0x80000004)  /*!< TIM17 Alternate Function mapping (only for Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_CEC              ((uint32_t)0x80000008)  /*!< CEC Alternate Function mapping (only for Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM1_DMA         ((uint32_t)0x80000010)  /*!< TIM1 DMA requests mapping (only for Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM9             ((uint32_t)0x80000020)  /*!< TIM9 Alternate Function mapping (only for XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM10            ((uint32_t)0x80000040)  /*!< TIM10 Alternate Function mapping (only for XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM11            ((uint32_t)0x80000080)  /*!< TIM11 Alternate Function mapping (only for XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM13            ((uint32_t)0x80000100)  /*!< TIM13 Alternate Function mapping (only for High density Value line and XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM14            ((uint32_t)0x80000200)  /*!< TIM14 Alternate Function mapping (only for High density Value line and XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_FSMC_NADV        ((uint32_t)0x80000400)  /*!< FSMC_NADV Alternate Function mapping (only for High density Value line and XL-density devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM67_DAC_DMA    ((uint32_t)0x80000800)  /*!< TIM6/TIM7 and DAC DMA requests remapping (only for High density Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):#define GPIO_Remap_TIM12            ((uint32_t)0x80001000)  /*!< TIM12 Alternate Function mapping (only for High density Value line devices) */
+Stm32f10x_gpio.h (libraries\stm32f10x_stdperiph_driver\inc):                                                                 only for High density Value line devices) */                                                       
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):  *   contains the configuration information for the specified I2C peripheral.
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set speed value for standard mode */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set Maximum Rise Time for standard mode */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set speed value and set F/S bit for fast mode */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set Maximum Rise Time for fast mode */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Set the address bit0 for read */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):    /* Reset the address bit0 for write */
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Drives the SMBusAlert pin high or low for the specified I2C.
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns the PEC value for the specified I2C.
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): * This I2C driver provides three different ways for I2C state monitoring
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): *      - This function is suitable for most applications as well as for startup 
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): *      - It is also suitable for users who need to define their own events.
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): *       - This function is suitable for the same applications above but it allows to
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): *       - Same remark concerning the error management is applicable for this 
+Stm32f10x_i2c.c (libraries\stm32f10x_stdperiph_driver\src): *        - This function could be used for specific applications or in debug phase.
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the I2C firmware 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  * has to wait for this event. It means that the Start condition has been correctly 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  *  should wait for event EV6. 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  * acknowledged) then the master has to check on one of the following events for 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  *     In most cases, using EV8 is sufficient for the application.
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  *     EV8_2 is also more suitable than EV8 for testing on the last data transmission 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):  *   if the General Call is enabled for the peripheral (using function I2C_GeneralCallCmd()) 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc):/* 3) Case of General Call enabled for the slave */
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): * This I2C driver provides three different ways for I2C state monitoring
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): *      - This function is suitable for most applications as well as for startup 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): *      - It is also suitable for users who need to define their own events.
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): *       - This function is suitable for the same applications above but it allows to
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): *       - Same remark concerning the error management is applicable for this 
+Stm32f10x_i2c.h (libraries\stm32f10x_stdperiph_driver\inc): *        - This function could be used for specific applications or in debug phase.
+Stm32f10x_it.c (user\src):  *          This file provides template for all exceptions handler and peripherals
+Stm32f10x_it.c (user\src):/*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
+Stm32f10x_iwdg.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the IWDG 
+Stm32f10x_pwr.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the PWR firmware 
+Stm32f10x_rcc.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Waits for HSE start-up.
+Stm32f10x_rcc.c (libraries\stm32f10x_stdperiph_driver\src):  *         fractional value for HSE crystal.  
+Stm32f10x_rcc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the RCC firmware 
+Stm32f10x_rcc.h (libraries\stm32f10x_stdperiph_driver\inc):/* PREDIV1 clock source (for STM32 connectivity line devices) */
+Stm32f10x_rcc.h (libraries\stm32f10x_stdperiph_driver\inc):/* PREDIV1 clock source (for STM32 Value line devices) */
+Stm32f10x_rtc.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the RTC firmware 
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the SDIO peripheral.
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for the SDIO command.
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns command index of last command for which response received.
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns response received from the card for the last command.
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *   contains the configuration information for the SDIO command.
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg SDIO_FLAG_CEATAEND: CE-ATA command completion signal received for CMD61
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61 interrupt
+Stm32f10x_sdio.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg SDIO_IT_CEATAEND: CE-ATA command completion signal received for CMD61
+Stm32f10x_sdio.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the SDIO firmware
+Stm32f10x_sdio.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t SDIO_Wait;      /*!< Specifies whether SDIO wait-for-interrupt request is enabled or disabled.
+Stm32f10x_sdio.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t SDIO_DataBlockSize;  /*!< Specifies the data block size for block transfer.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the configuration information for the specified SPI peripheral.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the configuration information for the specified SPI peripheral
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):    /* Get the Mask for the Odd bit (SPI_I2SPR[8]) register */
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures internally by software the NSS pin for the selected SPI.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Enables or disables the SS output for the selected SPI.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Configures the data size for the selected SPI.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns the transmit or the receive CRC register value for the specified SPI.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Returns the CRC Polynomial register value for the specified SPI.
+Stm32f10x_spi.c (libraries\stm32f10x_stdperiph_driver\src):  * @brief  Selects the data transfer direction in bi-directional mode for the specified SPI.
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the SPI firmware 
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t SPI_CPHA;                /*!< Specifies the clock active edge for the bit capture.
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t SPI_CRCPolynomial;       /*!< Specifies the polynomial used for the CRC calculation. */
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t I2S_Standard;     /*!< Specifies the standard used for the I2S communication.
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  uint16_t I2S_DataFormat;   /*!< Specifies the data format for the I2S communication.
+Stm32f10x_spi.h (libraries\stm32f10x_stdperiph_driver\inc):  uint32_t I2S_AudioFreq;    /*!< Specifies the frequency selected for the I2S communication.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for the 
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified TIM peripheral.
+Stm32f10x_tim.c (libraries\stm32f10x_stdperiph_driver\src):  *         contains the BDTR Register configuration  information for the TIM peripheral.
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the TIM firmware 
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):  * @note   This structure is used with all TIMx except for TIM6 and TIM7.    
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):                                       @note This parameter is valid only for TIM1 and TIM8. */
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):                                   @note This parameter is valid only for TIM1 and TIM8. */
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):                                   @note This parameter is valid only for TIM1 and TIM8. */
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):                                   @note This parameter is valid only for TIM1 and TIM8. */
+Stm32f10x_tim.h (libraries\stm32f10x_stdperiph_driver\inc):                                   @note This parameter is valid only for TIM1 and TIM8. */
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *         that contains the configuration information for the specified USART 
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The hardware flow control is available only for USART1, USART2 and USART3 */
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *         structure that contains the configuration information for the specified 
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note The Smart Card and Synchronous modes are not available for UART4 and UART5.
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg USART_IT_CTS:  CTS change interrupt (not available for UART4 and UART5)
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The CTS interrupt is not available for UART4 and UART5 */
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note The DMA mode is not available for UART5 except in the STM32
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):    /* Enable the DMA transfer for selected requests by setting the DMAT and/or
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):    /* Disable the DMA transfer for selected requests by clearing the DMAT and/or
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note The guard time bits are not available for UART4 and UART5.   
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note   The function is used for IrDA mode with UART4 and UART5.
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note The Smart Card mode is not available for UART4 and UART5. 
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  * @note The Smart Card mode is not available for UART4 and UART5.
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg USART_FLAG_CTS:  CTS Change flag (not available for UART4 and UART5)
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The CTS flag is not available for UART4 and UART5 */
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg USART_FLAG_CTS:  CTS Change flag (not available for UART4 and UART5).
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The CTS flag is not available for UART4 and UART5 */
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg USART_IT_CTS:  CTS change interrupt (not available for UART4 and UART5)
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The CTS interrupt is not available for UART4 and UART5 */ 
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  *     @arg USART_IT_CTS:  CTS change interrupt (not available for UART4 and UART5)
+Stm32f10x_usart.c (libraries\stm32f10x_stdperiph_driver\src):  /* The CTS interrupt is not available for UART4 and UART5 */
+Stm32f10x_usart.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the USART 
+Stm32f10x_wwdg.h (libraries\stm32f10x_stdperiph_driver\inc):  * @brief   This file contains all the functions prototypes for the WWDG firmware
+System_stm32f10x.c (user\src):  /* Reset the RCC clock configuration to the default reset state(for debug purpose) */
+System_stm32f10x.c (user\src):  *           value for HSE crystal.
+System_stm32f10x.c (user\src):/*!< FSMC Bank1 NOR/SRAM3 is used for the STM3210E-EVAL, if another Bank is 
+Test.c (user\src):	/* Send EEPROM address for write */ 
+Test.c (user\src):	/* Send EEPROM address for write */ 
+Test.c (user\src):	/* Send EEPROM address for read */ 
+---- return 匹配 (1 在 0 文件 ) ----
+Main.c (user\src):  return ch;

@@ -5,9 +5,7 @@
 ************************************/
 
 #include "conf.h"
-#include "test.c"
-
-void ReadDataFormFM24C01(u16 sub,u8 * rdbuf,u16 len);
+#include "test1.c"
 
 uint16_t test_state=0;
 
@@ -22,7 +20,7 @@ int main()
 	SYSTICK_Configuration();
 	SENSOR_I2C_BUS_Configuration();
 	
-	GYRO_Init();
+//	GYRO_Init();
 
 	SENSOR_EXTI_Configuration();
 
@@ -32,19 +30,21 @@ int main()
 	
 	while(1)
 		{
-  		for(i=0;i<100000;i++)
-			{}		
-		LED_ON;
-	//	LED_OFF;
-		a++;
-		for(i=0;i<100000;i++)
-			{}
-		LED_OFF;
-		
-		printf("G:%d %d %d     ",sensor_data.GYRO_X,sensor_data.GYRO_Y,sensor_data.GYRO_Z);
-		printf("A:%d %d %d\n",sensor_data.ACCER_X,sensor_data.ACCER_Y,sensor_data.ACCER_Z);
-	//	printf("%x %x \n", a,b);
-	
+//  		for(i=0;i<100000;i++)
+//			{}		
+//		LED_ON;
+//	//	LED_OFF;
+//		a++;
+//		for(i=0;i<100000;i++)
+//			{}
+//		LED_OFF;
+//		
+//		printf("G:%d %d %d     ",sensor_data.GYRO_X,sensor_data.GYRO_Y,sensor_data.GYRO_Z);
+//		printf("A:%d %d %d\n",sensor_data.ACCER_X,sensor_data.ACCER_Y,sensor_data.ACCER_Z);
+//	//	printf("%x %x \n", a,b);
+
+		a=matrix_test();
+		printf("xx\n");
 		}
 }
 
