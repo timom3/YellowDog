@@ -99,7 +99,7 @@ void matrix_mul(MATRIX_DATA_TYPE *matrix_A, MATRIX_DATA_TYPE *matrix_B, MATRIX_D
 			a_temp=(*add);
 			add=(matrix_B+row_temp*BIT32_ADD_OFFSET);
 			b_temp=(*add);
-			c_temp+=a_temp*b_temp;
+			c_temp+=(a_temp*b_temp)/1000;
 //			c_temp+=(*(matrix_A+column_temp*BIT32_ADD_OFFSET))*(*(matrix_B+row_temp*BIT32_ADD_OFFSET));
 //			(*matrix_C)+=(*(matrix_A+column_temp*BIT32_ADD_OFFSET))*(*(matrix_B+row_temp*BIT32_ADD_OFFSET));
 			column_temp++;
@@ -120,10 +120,12 @@ void matrix_inv(int32_t *matrix_A, int32_t *matrix_C)	//, uint8_t order
 {
 	uint8_t row,column;
 	int8_t k,l,u,v;
-	uint8_t rows[MATRIX_AMOUNT],columns[MATRIX_AMOUNT];
-	MATRIX_DATA_TYPE d,p;
+	uint8_t rows[MATRIX_ORDER]={0};
+	uint8_t columns[MATRIX_ORDER]={0};
+	MATRIX_DATA_TYPE d,p,a;
+	MATRIX_DATA_TYPE * temp;
 
-	for(k=0;k<=MATRIX_ORDER-1;k++)
+	for(k=0;k<MATRIX_AMOUNT;k++)
 		{
 		*matrix_C = *matrix_A;
 		matrix_C += BIT32_ADD_OFFSET;
@@ -132,26 +134,25 @@ void matrix_inv(int32_t *matrix_A, int32_t *matrix_C)	//, uint8_t order
 	matrix_C -= 36*BIT32_ADD_OFFSET;
 	matrix_A -= 36*BIT32_ADD_OFFSET;
 
-	for(k=0;k<=MATRIX_ORDER-1;k++)
+	for(k=0;k<MATRIX_ORDER;k++)
 		{
 		d=0;
-		for(row=k;row<=MATRIX_ORDER-1;row++)
+		for(row=k;row<MATRIX_ORDER;row++)
 			{
-			for(column=k;column<=MATRIX_ORDER-1;column++)
+			for(column=k;column<MATRIX_ORDER;column++)
 				{
 				l=row*MATRIX_ORDER+column;
-				p=abs(*(matrix_A+l*BIT32_ADD_OFFSET));
+				p=abs(*(matrix_C+l*BIT32_ADD_OFFSET));
 				if(p>d)
 					{
 					d=p;
 					rows[k]=row;
 					columns[k]=column;
+					printf("\r\n$k:%d $d:%d ",k,d);
 					}
 				}
 			}
-	/*	if((d/100)<1)	//上面搜索的元素均很小,矩阵不能求逆
-			{
-			}*/
+		//根据上面的判断交换行和列
 		if(rows[k]!=k)
 			{
 			for(column=0;column<=MATRIX_ORDER-1;column++)
@@ -174,49 +175,60 @@ void matrix_inv(int32_t *matrix_A, int32_t *matrix_C)	//, uint8_t order
 				*(matrix_C+v*BIT32_ADD_OFFSET) = p;
 				}
 			}
-		l=k*MATRIX_ORDER+k;		
+
+		l=k*MATRIX_ORDER+k;	
+//		temp=matrix_C+l*BIT32_ADD_OFFSET;
+//		p=(*(matrix_C+l*BIT32_ADD_OFFSET));
+//		p=(1000*1000)/p;
+//		*(matrix_C+l*BIT32_ADD_OFFSET)=p;
 		//a[kk]=1/a[kk]
-		*(matrix_C+l*BIT32_ADD_OFFSET) = (1000*1000)/(*matrix_C+l*BIT32_ADD_OFFSET);	//, 1=>1000
-		for(column=0;column<=MATRIX_ORDER-1;column++)
+		*(matrix_C+l*BIT32_ADD_OFFSET) = (1000*1000)/(*(matrix_C+l*BIT32_ADD_OFFSET));	//, 1=>1000
+
+		for(column=0;column<MATRIX_ORDER;column++)
 			{
 			if(column!=k)
 				{
 				u=k*MATRIX_ORDER+column;
 				//a[kj]=a[kj]a[kk]
-				*(matrix_C+u*BIT32_ADD_OFFSET)=((*(matrix_C+u*BIT32_ADD_OFFSET))*(*(matrix_C+l*BIT32_ADD_OFFSET)))/1000;	
+				*(matrix_C+u*BIT32_ADD_OFFSET)=(((*(matrix_C+u*BIT32_ADD_OFFSET))*(*(matrix_C+l*BIT32_ADD_OFFSET)))/1000);	
 				}
 			}
-		for(row=0;row<=MATRIX_ORDER;row++)
+		for(row=0;row<MATRIX_ORDER;row++)
 			{
 			if(row!=k)
 				{
-				for(column=0;column<=MATRIX_ORDER-1;column++)
+				for(column=0;column<MATRIX_ORDER;column++)
 					{
 					if(column!=k)
 						{
 						u=row*MATRIX_ORDER+column;
 						//a[ij]=a[ij]-a[ik]a[kj]
-						*(matrix_C+u*BIT32_ADD_OFFSET)=(*(matrix_C+u*BIT32_ADD_OFFSET))-\
-						(((*(matrix_C+(row*MATRIX_ORDER+k)*BIT32_ADD_OFFSET))*(*(matrix_C+(k*MATRIX_ORDER+column)*BIT32_ADD_OFFSET))))/1000;
+//						a=(*(matrix_C+(row*MATRIX_ORDER+k)*BIT32_ADD_OFFSET));
+//						p=(*(matrix_C+(k*MATRIX_ORDER+column)*BIT32_ADD_OFFSET));
+						(*(matrix_C+u*BIT32_ADD_OFFSET)) = (*(matrix_C+u*BIT32_ADD_OFFSET)) -\
+						(((*(matrix_C+(row*MATRIX_ORDER+k)*BIT32_ADD_OFFSET))*(*(matrix_C+(k*MATRIX_ORDER+column)*BIT32_ADD_OFFSET)))/1000);
+//						*(matrix_C+u*BIT32_ADD_OFFSET) = (*(matrix_C+u*BIT32_ADD_OFFSET))-((a*p)/1000);
 						}
 					}
 				}
 			}
-		for(row=0;row<=MATRIX_ORDER-1;row++)
+		for(row=0;row<MATRIX_ORDER;row++)
 			{
 			if(row!=k)
 				{
 				u=row*MATRIX_ORDER+k;
 				//a[ik]=-a[ik]a[kk]
-				*(matrix_C+u*BIT32_ADD_OFFSET)=-(*(matrix_C+u*BIT32_ADD_OFFSET))*(*(matrix_C+l*BIT32_ADD_OFFSET));
+				*(matrix_C+u*BIT32_ADD_OFFSET)=(-(*(matrix_C+u*BIT32_ADD_OFFSET))*(*(matrix_C+l*BIT32_ADD_OFFSET)))/1000;
+//				*(matrix_C+u*BIT32_ADD_OFFSET)=(*(matrix_C+u*BIT32_ADD_OFFSET))/1000;
 				}
 			}
 		}
-	for(k=MATRIX_ORDER-1;k>=0;k--)
+	
+	for(k=MATRIX_ORDER-1;k>=0;k--)	//恢复矩阵
 		{
 		if(columns[k]!=k)
 			{
-			for(column=0;column<=MATRIX_ORDER-1;column++)
+			for(column=0;column<MATRIX_ORDER;column++)
 				{
 				u=k*MATRIX_ORDER+column;
 				v=columns[k]*MATRIX_ORDER+column;
@@ -227,7 +239,7 @@ void matrix_inv(int32_t *matrix_A, int32_t *matrix_C)	//, uint8_t order
 			}
 		if(rows[k]!=k)
 			{
-			for(row=0;row<MATRIX_ORDER-1;row++)
+			for(row=0;row<MATRIX_ORDER;row++)
 				{
 				u=row*MATRIX_ORDER+k;
 				v=row*MATRIX_ORDER+rows[k];
