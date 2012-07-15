@@ -1,6 +1,9 @@
 /***********************************
 -  PPP_init.h
 ************************************/
+#ifndef PPPINIT_H
+#define PPPINIT_H
+
 #include "stm32f10x_conf.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,13 +17,20 @@
 #define LED_TOGGLE (GPIOB->ODR^=GPIO_Pin_5)
 #define I2C2_DR_Address (I2C2_BASE+0x10)	// I2C2起始地址 0x40005800  I2C_DR偏移量0x10
 #define SENSOR_I2C_BUS I2C2
-#define SYSTICK_TICK 72000		//1ms
+#define SYSTICK_TICK 72000	//1ms 72000
+#define USART_RXBUFFER_SIZE 5	//USART接收字节数
+#define USART_TXBUFFER_SIZE 25	//USART发送字节数
+#define USART_A_OFFSET 1
+#define USART_G_OFFSET USART_A_OFFSET+6
+#define USART_M_OFFSET USART_A_OFFSET+12
+#define USART_CTRL_OFFSET USART_A_OFFSET+18
 
 //sensor_state.I2C_run_flag 识别宏定义
 #define I2C_FREE_MASK 0x08//第3位为0时 I2C空闲
-#define ACCER_READING 0x80
-#define GYRO_READING 0x40
-#define MEGN_READING 0x20
+#define ACCER_READING 0x20
+#define GYRO_READING 0x10
+#define MEGN_READING 0x30
+#define I2C_RUNNING ACCER_READING	//I2C运行状态 剩余次数,从accer开始 accer=2 gyro=1 0为停止
 
 #define ACCER_DATA_BASE (&sensor_data.ACCER_OUT_X_L)
 #define GYRO_DATA_BASE (&sensor_data.GYRO_OUT_X_L)
@@ -79,7 +89,10 @@
 typedef struct
 {
 	uint8_t sensor_address;
-	__IO uint8_t I2C_run_flag;/*  (MSB)AGMR xxxx(LSB)
+	__IO uint8_t I2C_run_flag;/*
+									前三位改成运行状态 
+									
+									(MSB)AGMR xxxx(LSB)
 									 A-加速度计状态表示, 1为正在执行 0为空闲;
 									 G-陀螺仪
 									 M-磁传感器
@@ -107,12 +120,30 @@ typedef struct
 	int16_t GYRO_X;		int16_t GYRO_Y;		int16_t GYRO_Z;
 }sensor_data_TypeDef;
 
+typedef struct
+{
+	uint16_t time_tamp;
+	FlagStatus led;
+	FlagStatus sensor_read;
+}time_TypeDef;
+
+typedef struct
+{
+	uint8_t RxBuffer[USART_RXBUFFER_SIZE];	//首字节不变 用来做对照
+	uint8_t TxBuffer[USART_TXBUFFER_SIZE];
+	uint8_t RxCount;
+	uint8_t TxCount;
+	
+}UsartData_TypeDef;
+
 
 /***********************************
 - extern data
 ************************************/
 extern sensor_data_TypeDef sensor_data;
 extern sensor_state_TypeDef sensor_state;
+extern time_TypeDef time;
+extern UsartData_TypeDef UsartData;
 extern uint16_t test_state;
 
 /***********************************
@@ -125,13 +156,14 @@ void SENSOR_I2C_BUS_Configuration(void);
 void SENSOR_I2C_BUS_DMA_Configuration(void);
 void SYSTICK_Configuration(void);
 ErrorStatus sensor_state_assign(uint8_t sensor_address, uint8_t SUB);
+void USART1_ISR(void);
 void SENSOR_I2C_BUS_EV_ISR(void);
 void SENSOR_I2C_BUS_ERR_ISR(void);
 void SYSTICK_ISR(void);
 void SENSOR_EXTI_Configuration(void);
 
 
-
+#endif
 
 
 

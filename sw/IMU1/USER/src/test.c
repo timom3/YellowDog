@@ -67,3 +67,99 @@ uint8_t matrix_test(void)
 	while(1);
 //#endif
 }
+
+/*-----------------------------
+卡尔曼测试
+-输入: 
+-输出: 
+-------------------------------*/
+uint8_t kalman_test(void)
+{
+	int i;
+	
+//	kalman_init();
+/*	k_filter.x[0]=sensor_data.ACCER_X;
+	k_filter.x[1]=sensor_data.ACCER_Y;
+	k_filter.x[2]=sensor_data.ACCER_Z;
+	k_filter.x[3]=sensor_data.GYRO_X;
+	k_filter.x[4]=sensor_data.GYRO_Y;
+	k_filter.x[5]=sensor_data.GYRO_Z;
+
+	kalman_filter();
+//	int32ToChar(&k_filter.S[0], &UsartData.TxBuffer[0], KALMAN_P, USART_A_OFFSET);
+// 	USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
+
+	printf("S:");
+	for(i=0;i<KALMAN_P;i++)
+		{
+		printf("%d ",k_filter.S[i]);
+		}
+	printf("\r\n");
+	*/
+	return 1;
+}
+
+/*-----------------------------
+浮点卡尔曼测试
+-输入: 
+-输出: 
+-------------------------------*/
+void kalmanFloatTest(void)
+{
+	int16_t i;
+	
+	kFFloat.x[0]=sensor_data.ACCER_X;
+	kFFloat.x[1]=sensor_data.ACCER_Y;
+	kFFloat.x[2]=sensor_data.ACCER_Z;
+/*	kFFloat.x[0]=sensor_data.GYRO_X;
+	kFFloat.x[1]=sensor_data.GYRO_Y;
+	kFFloat.x[2]=sensor_data.GYRO_Z;*/
+	kFFloat.x[3] =sensor_data.GYRO_X;
+	kFFloat.x[4] =sensor_data.GYRO_Y;
+	kFFloat.x[5] =sensor_data.GYRO_Z;
+
+	for(i=0;i<KALMAN_P;i++)
+		{
+		kFFloat.S_pre[i]=kFFloat.S[i];
+		}
+	
+	kalmanFilterFloat();
+	
+/*	printf("\r\nS:");
+	for(i=0;i<KALMAN_P;i++)
+		{
+		printf("%8f ",kFFloat.S[i]);
+		}*/
+//	printf("\r\nx:%2f %2f %2f|",kFFloat.x[3],kFFloat.x[4],kFFloat.x[5]);
+//	printf("\r\nS:%4f %4f %4f|",kFFloat.PP_temp[3],kFFloat.PP_temp[4],kFFloat.PP_temp[5]);
+}
+
+/*-----------------------------
+打印矩阵各个元素
+-输入: 矩阵地址 数量
+-输出: 
+-------------------------------*/
+void printfMatrix(MATRIX_DATA_TYPE *addr, int size)
+{
+	int i;
+	for(i=0;i<size;i++)
+		{
+		printf("%d ", *(addr+i));
+		}
+//	printf("r\n");
+}
+
+/*-----------------------------
+四元数测试
+-输入: 
+-输出: 
+-------------------------------*/
+void quaternionTest(void)
+{
+//	int i;
+	
+	quaternion();
+	printf("\r\nQ:%6f %6f %6f|",quat.x,quat.y,quat.z);
+//	printf(" pitch:%6f| roll: %6f| yaw:%6f|\r\n", quat.x*RADtoANG, quat.y*RADtoANG, quat.z*RADtoANG);
+}
+

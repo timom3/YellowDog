@@ -31,7 +31,7 @@
 ### ADS-LD Output File: '..\OBJ\IMU1.axf'
 ### ADS-LD Command File: '..\OBJ\IMU1.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\OBJ\IMU1.lnp', Handle=0x000001B0
+### Creating CmdFile '..\OBJ\IMU1.lnp', Handle=0x000001A8
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\OBJ\IMU1.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -25,7 +25,6 @@
 #include "stm32f10x_it.h"
 #include "PPP_init.h"
 
-extern int16_t X,Y,Z;
 
 /** @addtogroup STM32F10x_StdPeriph_Examples
   * @{
@@ -166,26 +165,22 @@ void DMA1_Channel5_IRQHandler(void)
   */
 void EXTI9_5_IRQHandler(void)
 {
-//	LED_ON;
 	if(EXTI_GetITStatus(EXTI_Line6) != RESET)
 		{
-		if(!sensor_state.I2C_run_flag)
-			{	
-			sensor_data.GYRO_X = sensor_data.GYRO_OUT_X_H*0x100 + sensor_data.GYRO_OUT_X_L; 
-			sensor_data.GYRO_Y = sensor_data.GYRO_OUT_Y_H*0x100 + sensor_data.GYRO_OUT_Y_L; 
-			sensor_data.GYRO_Z = sensor_data.GYRO_OUT_Z_H*0x100 + sensor_data.GYRO_OUT_Z_L; 
-			
-			sensor_state_assign(GYRO_address, OUT_X_L_G);
-			sensor_state.I2C_run_flag=GYRO_READING;
-			I2C_GenerateSTART(SENSOR_I2C_BUS, ENABLE);
-			}	
+		sensor_data.GYRO_X = sensor_data.GYRO_OUT_X_H*0x100 + sensor_data.GYRO_OUT_X_L; 
+		sensor_data.GYRO_Y = sensor_data.GYRO_OUT_Y_H*0x100 + sensor_data.GYRO_OUT_Y_L; 
+		sensor_data.GYRO_Z = sensor_data.GYRO_OUT_Z_H*0x100 + sensor_data.GYRO_OUT_Z_L; 
+		
+		sensor_state_assign(GYRO_address, OUT_X_L_G);
+		sensor_state.I2C_run_flag|=GYRO_READING;
+		I2C_GenerateSTART(SENSOR_I2C_BUS, ENABLE);	
 		// Clear the Key Button EXTI line pending bit 
 		EXTI_ClearITPendingBit(EXTI_Line6);
 		}/**/
 }
 
 /**
-  * @brief  This function handles External lines 9 to 5 interrupt request.
+  * @brief  This function handles External lines 1 interrupt request.
   * @param  None
   * @retval None
   */
@@ -207,6 +202,18 @@ void EXTI1_IRQHandler(void)
 		// Clear the Key Button EXTI line pending bit 
 		EXTI_ClearITPendingBit(EXTI_Line1);
 		}/**/
+}
+
+/*******************************************************************************
+* Function Name  : USART1_IRQHandler
+* Description	 : This function handles USART1 interrupt request.
+* Input 		 : None
+* Output		 : None
+* Return		 : None
+*******************************************************************************/
+void USART1_IRQHandler(void)
+{
+	USART1_ISR();
 }
 
 /*******************************************************************************

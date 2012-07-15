@@ -166,20 +166,22 @@ uint8_t sensor_read(uint8_t sensor_address, uint8_t SUB)//read a byte from senso
 void GYRO_Init()
 { 
 	I2C_ITConfig(SENSOR_I2C_BUS, I2C_IT_BUF|I2C_IT_EVT|I2C_IT_ERR, DISABLE);
-	 
-	sensor_write(GYRO_address, CTRL_REG1_G, 0xAF); //0xEF
-	sensor_write(GYRO_address, CTRL_REG2_G, 0x00);
-	sensor_write(GYRO_address, CTRL_REG3_G, 0x08);
-	sensor_write(GYRO_address, CTRL_REG4_G, 0x10);
-	sensor_write(GYRO_address, CTRL_REG5_G, 0x00);
 	
-/**/sensor_write(ACCER_address, CTRL_REG1_A, 0x2F); 
+/**/sensor_write(ACCER_address, CTRL_REG1_A, 0x3F);//0x2F 
 	sensor_write(ACCER_address, CTRL_REG2_A, 0x00); 
 	sensor_write(ACCER_address, CTRL_REG3_A, 0x10); //0x1A
 	sensor_write(ACCER_address, CTRL_REG4_A, 0x00); 
 	sensor_write(ACCER_address, CTRL_REG5_A, 0x00);
+	
+//	SENSOR_EXTI_Configuration();
+	
+	sensor_write(GYRO_address, CTRL_REG1_G, 0xEF); //0xEF
+	sensor_write(GYRO_address, CTRL_REG2_G, 0x00);
+	sensor_write(GYRO_address, CTRL_REG3_G, 0x08);
+	sensor_write(GYRO_address, CTRL_REG4_G, 0x00);
+	sensor_write(GYRO_address, CTRL_REG5_G, 0x00);
 
-	printf("\nGYRO_init DONE!\n");
+//	printf("\r\nGYRO_init DONE!\r\n");
 	
 	I2C_ITConfig(SENSOR_I2C_BUS, I2C_IT_EVT|I2C_IT_ERR, ENABLE);		
 } 
@@ -208,7 +210,7 @@ void GYRO_Test()
 
 void ACCER_Test()
 { 
-	int value1=0,value2=0,value3=0,STATUS_RES_A=0; 
+	int value1=0,value2=0,value3=0; 
 	sensor_write(ACCER_address, CTRL_REG1_A, 0x3F);
 	
 	value1= sensor_read(ACCER_address, OUT_X_H_A)*0x100 + sensor_read(ACCER_address, OUT_X_L_A); 

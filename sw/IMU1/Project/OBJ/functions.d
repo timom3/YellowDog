@@ -23,3 +23,5 @@
 ..\OBJ\functions.o: E:\software\keil\ARM\RV31\INC\stdio.h
 ..\OBJ\functions.o: E:\software\keil\ARM\RV31\INC\stdlib.h
 ..\OBJ\functions.o: E:\software\keil\ARM\RV31\INC\math.h
+..\OBJ\functions.o: ..\..\USER\inc\test.h
+..\OBJ\functions.o: ..\..\USER\inc\PPP_init.h

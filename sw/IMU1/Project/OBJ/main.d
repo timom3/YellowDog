@@ -23,7 +23,7 @@
 ..\OBJ\main.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\OBJ\main.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 ..\OBJ\main.o: ..\..\USER\inc\PPP_init.h
-..\OBJ\main.o: ..\..\USER\inc\test.h
 ..\OBJ\main.o: ..\..\USER\inc\functions.h
 ..\OBJ\main.o: E:\software\keil\ARM\RV31\INC\math.h
+..\OBJ\main.o: ..\..\USER\inc\test.h
 ..\OBJ\main.o: ..\..\USER\src\test1.c

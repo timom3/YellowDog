@@ -1,5 +1,5 @@
 ..\OBJ\test.o: ..\..\USER\src\test.c
-..\OBJ\test.o: ..\..\USER\src\test.h
+..\OBJ\test.o: ..\..\USER\inc\test.h
 ..\OBJ\test.o: E:\software\keil\ARM\RV31\INC\stdio.h
 ..\OBJ\test.o: E:\software\keil\ARM\RV31\INC\stdlib.h
 ..\OBJ\test.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
@@ -22,5 +22,6 @@
 ..\OBJ\test.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\OBJ\test.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\OBJ\test.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+..\OBJ\test.o: ..\..\USER\inc\PPP_init.h
 ..\OBJ\test.o: ..\..\USER\inc\functions.h
 ..\OBJ\test.o: E:\software\keil\ARM\RV31\INC\math.h

@@ -4,8 +4,12 @@
 ************************************/
 #include "PPP_init.h"
 
+
+
 sensor_state_TypeDef sensor_state;
-sensor_data_TypeDef sensor_data;
+sensor_data_TypeDef sensor_data;	
+time_TypeDef time;
+UsartData_TypeDef UsartData;
 
 
 /********************
@@ -80,6 +84,7 @@ void USART1_Configuration(void)
 {
 	USART_InitTypeDef USART_InitStructure;
 	GPIO_InitTypeDef GPIO_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
 
 	USART_InitStructure.USART_BaudRate = 115200;
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
@@ -101,10 +106,20 @@ void USART1_Configuration(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-/**/
 	// USART configuration
 	USART_Init(USART1,&USART_InitStructure);
-    
+
+	// enable NVIC	
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+
+	// USART interrupt enable
+ 	USART_ITConfig(USART1, USART_IT_TXE, ENABLE);	//
+ 	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 	// Enable USART
 	USART_Cmd(USART1, ENABLE);
 }
@@ -243,11 +258,11 @@ void SENSOR_EXTI_Configuration(void)
 	EXTI_InitTypeDef EXTI_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
 	
-//	RCC_APB2PeriphResetCmd(RCC_APB2Periph_AFIO, ENABLE);
-//	RCC_APB2PeriphResetCmd(RCC_APB2Periph_AFIO,DISABLE);
+//	RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE);
+//	RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, DISABLE);
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE);//PB1 ACCER_INT2
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);//PA6 GYRO_DR
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE);//PB1 ACCER_INT2
+//	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);//PA6 GYRO_DR
 
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI1_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
@@ -256,17 +271,17 @@ void SENSOR_EXTI_Configuration(void)
 	NVIC_Init(&NVIC_InitStructure); 	
 	
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	
 	GPIO_ResetBits(GPIOB, GPIO_Pin_1);
-	GPIO_ResetBits(GPIOA, GPIO_Pin_6);
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;//PB1 ACCER_INT2
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	
+	GPIO_ResetBits(GPIOA, GPIO_Pin_6);
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;//PA6 GYRO_DR
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
@@ -274,6 +289,7 @@ void SENSOR_EXTI_Configuration(void)
 	EXTI_DeInit();
 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource1);
 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource6);
+//	EXTI_GenerateSWInterrupt(EXTI_Line6);
 
 	EXTI_InitStructure.EXTI_Line = EXTI_Line1;//参考手册9.2.5节
 	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt; 
@@ -286,8 +302,7 @@ void SENSOR_EXTI_Configuration(void)
 	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;  
 	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
 	EXTI_Init(&EXTI_InitStructure);
-	EXTI_GenerateSWInterrupt(EXTI_Line1);
-	EXTI_GenerateSWInterrupt(EXTI_Line6);
+	EXTI_GenerateSWInterrupt(EXTI_Line1|EXTI_Line6);
 
 }
 
@@ -299,7 +314,7 @@ void SYSTICK_Configuration(void)
 	//SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK);
 	if(SysTick_Config(SYSTICK_TICK))
 		{
-		printf("systick error.tick is too big!\n");
+//		printf("systick error.tick is too big!\n");
 		while(1);
 		}
 }
@@ -322,9 +337,35 @@ ErrorStatus sensor_state_assign(uint8_t sensor_address, uint8_t SUB)
 	return SUCCESS;
 }
 
-/********************
+/*-------------------
+- USART中断服务程序
+-------------------*/
+void USART1_ISR(void)
+{
+//	uint8_t count;
+	if(USART_GetITStatus(USART1, USART_IT_RXNE))//接收寄存器非空
+		{
+		UsartData.RxBuffer[UsartData.RxCount]=(USART_ReceiveData(USART1));
+		if((UsartData.RxCount++) == USART_RXBUFFER_SIZE-1)	{UsartData.RxCount=0;}
+		}
+	if(USART_GetITStatus(USART1, USART_IT_TXE))//发送寄存器空
+		{
+		USART_SendData(USART1, UsartData.TxBuffer[UsartData.TxCount]);
+		if((UsartData.TxCount++) == USART_TXBUFFER_SIZE-1)	
+			{
+			UsartData.TxCount=0;
+			USART_ITConfig(USART1, USART_IT_TXE, DISABLE);	//关掉串口发送寄存器空 中断
+			}
+		}
+//	for(count=0;count<USART_RXBUFFER_SIZE;count++)
+//		{
+//		UsartData.TxBuffer[count]=UsartData.RxBuffer[count];
+//		}
+}
+
+/*-------------------
 - 传感器I2C总线的事件中断服务程序
-*********************/
+-------------------*/
 void SENSOR_I2C_BUS_EV_ISR(void)
 {
 	//-SB
@@ -395,7 +436,7 @@ void SENSOR_I2C_BUS_EV_ISR(void)
 		sensor_state.data_receive_finish=RESET;
 		sensor_state.SUB_Transmitted=RESET;
 
-		switch(sensor_state.I2C_run_flag&0xE0)
+		switch(sensor_state.I2C_run_flag&0xF0)		//改成if模式的 用与判断?????????????????
 			{
 			case ACCER_READING:
 				{
@@ -414,6 +455,17 @@ void SENSOR_I2C_BUS_EV_ISR(void)
 			default:
 				break;
 			}
+/*		if(sensor_state.I2C_run_flag&ACCER_READING)
+			{
+			(*(ACCER_DATA_BASE+temp))=sensor_state.receive_data;
+			}
+		else if(sensor_state.I2C_run_flag&GYRO_READING)
+			{
+			(*(GYRO_DATA_BASE+temp))=sensor_state.receive_data;
+			}
+		else if(sensor_state.I2C_run_flag&MEGN_READING)
+			{}*/
+		
 		
 		if(temp<5)//未读够6个字节数据(0:5)
 			{
@@ -424,7 +476,25 @@ void SENSOR_I2C_BUS_EV_ISR(void)
 			}
 		else//接收到第6个字节
 			{
-			sensor_state.I2C_run_flag=0;//复位所有运行标志
+//			sensor_state.I2C_run_flag=0;//复位所有运行标志
+			sensor_state.I2C_run_flag-=0x10;
+			if((sensor_state.I2C_run_flag&0xF0)==ACCER_READING)
+				{
+				}
+			else if((sensor_state.I2C_run_flag&0xF0)==GYRO_READING)
+				{						
+				sensor_state_assign(GYRO_address, OUT_X_L_G);
+				sensor_state.I2C_run_flag=(GYRO_READING);
+				I2C_GenerateSTART(SENSOR_I2C_BUS, ENABLE);	
+				}
+//			else if((sensor_state.I2C_run_flag&0xF0)==MEGN_READING)
+//				{
+//				}
+			else
+				{
+				sensor_state.I2C_run_flag=0;
+				I2C_GenerateSTOP(SENSOR_I2C_BUS, ENABLE);
+				}
 			}		
 		}
 }
@@ -460,6 +530,8 @@ void SENSOR_I2C_BUS_ERR_ISR(void)
 *********************/
 void SYSTICK_ISR(void)
 {
-	LED_TOGGLE;
+	time.time_tamp++;
+	if((time.time_tamp%400)==0)	{time.led=SET;}
+	if((time.time_tamp%5)==0)	{time.sensor_read=SET;}
 }
 

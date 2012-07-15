@@ -23,9 +23,7 @@ extern MATRIX_DATA_TYPE matrix_test_C[];*/
 
 extern uint8_t matrix_test(void);
 uint8_t kalman_test(void);
-void kalmanFloatTest(void);
 void printfMatrix(MATRIX_DATA_TYPE *addr, int size);
-void quaternionTest(void);
 
 #endif
 
